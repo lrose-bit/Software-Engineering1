@@ -4,13 +4,13 @@ import java.io.FileWriter;
 import java.util.ArrayList;
 
 public class Daten {
-
+	
 	public static void main(String[] args){
 
 		//ArrayList zum speichern der Koordinaten
 		ArrayList<String> position = new ArrayList<String>();
 		
-		//Koordinaten (Breite = b / Länge = l) um die Klasse "Daten" unabhängig zu testen.
+		//TESTEN - Koordinaten (Breite = b / Länge = l) um die Klasse "Daten" unabhängig zu testen.
 		String b1 = "51° 21' 59.0\" N";
 		String l1 = "7° 29' 51.3\" O";
 		String b2 = "51° 22' 6.0\" N";
