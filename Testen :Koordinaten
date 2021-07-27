@@ -5,22 +5,19 @@ public class Koordinaten /*implements Serializable*/ { //Ermöglicht das Überf�
 	private String breite;
 	private String laenge;
 	
-	//Variablen (Koordinaten, Länge/Breite) um die Klasse "Daten" unabhängig zu testen.
-			String b1 = "51° 21' 59.0\" N";
-			String l1 = "7° 29' 51.3\" O";
-			String b2 = "51° 22' 6.0\" N";
-			String l2 = "7° 41' 14.5\" O";
-			String b3 = "51° 33' 42.8\" N";
-			String l3 = "8° 6' 46.8\" O";
-			String b4 = "51° 21' 42.5\" N";
-			String l4 = "8° 17' 45.3\" O";
-	
 	//Konstruktor
 	Koordinaten(String breite, String laenge){
 		this.breite = breite;
 		this.laenge = laenge;
 	}
-
+	
+	//Methode
+	public String koordinate() {
+		String position = breite + " " + laenge;
+		return position;
+//		System.out.println(position);
+	}
+	
 	//Getter und Setter
 	public String getBreite() {
 		return breite;
