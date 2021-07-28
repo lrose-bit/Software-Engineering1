@@ -1,7 +1,6 @@
-//import java.io.Serializable;
 
 //Testobjekt Koordinaten 
-public class Koordinaten /*implements Serializable*/ { //Ermöglicht das Überführen der Daten in eine Textform
+public class Koordinaten {
 	private String breite;
 	private String laenge;
 	
@@ -16,23 +15,6 @@ public class Koordinaten /*implements Serializable*/ { //Ermöglicht das Überf�
 		String position = breite + " " + laenge;
 		return position;
 //		System.out.println(position);
-	}
-	
-	//Getter und Setter
-	public String getBreite() {
-		return breite;
-	}
-
-	public void setBreite(String breite) {
-		this.breite = breite;
-	}
-
-	public String getLaenge() {
-		return laenge;
-	}
-
-	public void setLaenge(String laenge) {
-		this.laenge = laenge;
 	}
 	
 }
