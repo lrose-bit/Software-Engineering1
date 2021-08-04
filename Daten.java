@@ -1,4 +1,6 @@
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.PrintWriter;
 import java.io.FileWriter;
 import java.util.ArrayList;
@@ -35,6 +37,33 @@ public class Daten {
 		}
 		
 	}
+	
+	//Methode .csv lesen
+	public void positionLesen() {
+
+		// Einlesen des Files und spliten
+		FileReader daten = null;
+		BufferedReader buff = null;
+		String zeile;
+		ArrayList<String> zeilen = new ArrayList<String>();
+
+		try {
+			daten = new FileReader("daten.csv");
+			buff = new BufferedReader(daten);
+			
+			while ((zeile = buff.readLine()) != null) {
+				//System.out.println(zeile); // Kontrolle was eingelesen wurde
+
+				zeilen.add(zeile);
 		
-} 
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+	}
+		
+	//System.out.println(zeilen);
+		
+	}
+		
+}
 
