@@ -40,7 +40,7 @@ public class Daten {
 	}
 	
 	//Methode .csv lesen
-	public  ArrayList<Class_GpsCoordinate> positionLesen() {
+	public  ArrayList<Class_GpsKoordinate> positionLesen() {
 
 		// Einlesen des Files und spliten
 		FileReader daten = null;
@@ -65,20 +65,20 @@ public class Daten {
 	
 
 		//ArrayList für die Zurückgabe eines im passenden Datenformat (ArrayList mit Objekten vom Datentyp Double)
-		ArrayList<Class_GpsCoordinate> gpsKoordinate = new ArrayList<Class_GpsCoordinate>();  
+		ArrayList<Class_GpsKoordinate> gpsKoordinate = new ArrayList<Class_GpsKoordinate>();
 	
 		//Splite die ArrayList position in längengrad und breitengrad		
 		for(String grad : zeilen ) {
 			String[] gra = grad.split("!");
-		
+			
 			//Umwandelung von String in Double
-			double lengthDegree = Double.parseDouble(gra[0]);
-			double widthDegree = Double.parseDouble(gra[1]);
-			System.out.println(lengthDegree);
-			System.out.println(widthDegree);
+			double laengenGrad = Double.parseDouble(gra[0]);
+			double breitenGrad = Double.parseDouble(gra[1]);
+			System.out.println(laengenGrad);
+			System.out.println(breitenGrad);
 		
 			//Erstelle neues Objekt vom Typ 
-			Class_GpsCoordinate koordinateEins = new Class_GpsCoordinate(lengthDegree, widthDegree);
+			Class_GpsKoordinate koordinateEins = new Class_GpsKoordinate(laengenGrad, breitenGrad);
 			gpsKoordinate.add(koordinateEins);
 			
 			System.out.println(gpsKoordinate.get(1).getDouble_lat());
