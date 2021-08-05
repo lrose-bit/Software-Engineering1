@@ -25,7 +25,7 @@ public class TestMain {
 			//Methode positionSpeichern ausführen
 			System.out.println(daten.positionLesen());
 				
-		.
+		
 	}
 
 }
