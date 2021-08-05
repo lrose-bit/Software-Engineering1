@@ -14,7 +14,7 @@ public class TestMain {
 			String pos1 = "51.152565!11.809919";
 			String pos2 = "52.152565!12.809919";
 			
-			//Position zur ArrayList hinzufügen
+			//Position zur ArrayList hinzufÃ¼gen
 			position.add(pos1);
 			position.add(pos2);
 
@@ -22,10 +22,10 @@ public class TestMain {
 			Daten daten = new Daten(position);
 			daten.positionSpeichern();
 			
-			//Methode positionSpeichern ausführen
+			//Methode positionSpeichern ausfÃ¼hren
 			System.out.println(daten.positionLesen());
 				
-		
+		.
 	}
 
 }
